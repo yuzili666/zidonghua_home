@@ -5,7 +5,9 @@ import pytest
 
 request = Request.Request()
 assertion = Assert.Assertions()
+
 idsList=[]
+
 excel_list = read_excel.read_excel_list('./document/test.xlsx')
 length = len(excel_list)
 for i in range(length):
@@ -19,6 +21,7 @@ head = {}
 
 @allure.feature("登录功能")
 class Test_login:
+
     @allure.story("登录")
     def test_login(self):
         # =后面 :  request对象 调用了  post_request  方法,传入了两个参数

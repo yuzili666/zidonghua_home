@@ -10,8 +10,6 @@ if __name__ == '__main__':
     # '--alluredir',
 
 
-
-
     pytest.main(['-s', '-q','--alluredir','./Report/xml/','./TestCase'])
 
 
